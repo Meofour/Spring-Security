@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - IOTSTAR.VN</title>
+</head>
+<body>
+    <div>
+        <form th:action="@{/login}" method="post" style="max-width: 400px; margin: 0 auto;">
+            <p>Email: <input type="text" name="username" required /></p>
+            <p>Password: <input type="password" name="password" required /></p>
+            <p><input type="submit" value="Login" /></p>
+        </form>
+    </div>
+</body>
+</html>
